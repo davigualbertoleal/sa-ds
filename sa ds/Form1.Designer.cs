@@ -68,9 +68,9 @@
             this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.lblUser.Location = new System.Drawing.Point(37, 130);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(64, 17);
+            this.lblUser.Size = new System.Drawing.Size(47, 17);
             this.lblUser.TabIndex = 2;
-            this.lblUser.Text = "USUÁRIO";
+            this.lblUser.Text = "LOGIN";
             // 
             // tbxUsuario
             // 
@@ -120,6 +120,7 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "ACESSAR SISTEMA";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnSair
             // 
@@ -136,6 +137,7 @@
             this.btnSair.TabIndex = 7;
             this.btnSair.Text = "X";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // label1
             // 
