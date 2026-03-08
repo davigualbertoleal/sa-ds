@@ -69,12 +69,11 @@ CREATE TABLE relatorios (
   nm VARCHAR(255) DEFAULT NULL
 );
 
--- Inserindo uns usuários genéricos só para o idUsuarioCadastro não dar erro (caso precise)
-INSERT INTO usuarios (nome, email, senha, tipo, status) VALUES 
-('Admin', 'admin@empresa.com', '@dmin123', 'admin', 'ativo'),
-('Tiago Souza Andrade', 'titi@empresa.com', 'titi123', 'usuario', 'ativo');
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`, `tipo`, `status`) VALUES
+(1, 'Admin', 'admin@empresa.com', '@dmin123', 'admin', 'ativo'),
+(2, 'Tiago Souza Andrade', 'titi@empresa.com', 'titi123', 'usuario', 'ativo'),
+(3, 'Wesker', 'mago@empresa.com', 'rebeca', 'usuario', 'ativo');
 
--- Inserindo os produtos com o padrão camelCase
 INSERT INTO produtos (codigoProduto, nome, quantidade, numeroPartimento, estoqueMinimo, idUsuarioCadastro) VALUES
 ('PRD-001', 'Parafuso Allen 3mm', 260, 'A1', 50, 1),
 ('PRD-002', 'Porca Sextavada 3mm', 200, 'A1', 40, 1),
